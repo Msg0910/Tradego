@@ -1,0 +1,806 @@
+{
+  "Workload 1: Low Tick Rate": {
+    "workload_name": "Workload 1: Low Tick Rate",
+    "symbols": [
+      "RELIANCE"
+    ],
+    "symbol_count": 1,
+    "strategies_per_symbol": 1,
+    "total_ticks": 50,
+    "orders_executed": 103,
+    "total_wall_duration_ms": 3.38,
+    "throughput_ticks_per_sec": 14780.2,
+    "avg_tick_processing_us": 67.66,
+    "primary_metric_t1_t7": {
+      "count": 103,
+      "min_us": 481.1,
+      "mean_us": 42623.37,
+      "p50_us": 49752.8,
+      "p90_us": 50359.1,
+      "p95_us": 50622.9,
+      "p99_us": 99821.1,
+      "p999_us": 150209.1,
+      "max_us": 150209.1
+    },
+    "full_lineage_t1_t10": {
+      "count": 0,
+      "min_us": 0.0,
+      "mean_us": 0.0,
+      "p50_us": 0.0,
+      "p90_us": 0.0,
+      "p95_us": 0.0,
+      "p99_us": 0.0,
+      "p999_us": 0.0,
+      "max_us": 0.0
+    },
+    "stages": {
+      "T1_to_T2_tick_to_signal": {
+        "count": 103,
+        "min_us": 119.8,
+        "mean_us": 2971.83,
+        "p50_us": 516.2,
+        "p90_us": 1388.2,
+        "p95_us": 2171.4,
+        "p99_us": 49942.6,
+        "p999_us": 99974.6,
+        "max_us": 99974.6
+      },
+      "T2_to_T4_signal_to_risk": {
+        "count": 103,
+        "min_us": 31.8,
+        "mean_us": 179.8,
+        "p50_us": 148.4,
+        "p90_us": 369.1,
+        "p95_us": 412.4,
+        "p99_us": 569.3,
+        "p999_us": 987.7,
+        "max_us": 987.7
+      },
+      "T4_to_T6_risk_to_plan": {
+        "count": 103,
+        "min_us": 0.3,
+        "mean_us": 1.87,
+        "p50_us": 1.6,
+        "p90_us": 3.7,
+        "p95_us": 3.9,
+        "p99_us": 5.5,
+        "p999_us": 6.9,
+        "max_us": 6.9
+      },
+      "T6_to_T7_plan_to_dispatch": {
+        "count": 103,
+        "min_us": 309.6,
+        "mean_us": 39469.87,
+        "p50_us": 48887.0,
+        "p90_us": 49716.0,
+        "p95_us": 49776.5,
+        "p99_us": 50120.4,
+        "p999_us": 50203.0,
+        "max_us": 50203.0
+      },
+      "sub_stages": {
+        "T2_to_T3_signal_to_risk_handoff": {
+          "count": 103,
+          "min_us": 0.1,
+          "mean_us": 0.51,
+          "p50_us": 0.4,
+          "p90_us": 1.0,
+          "p95_us": 1.3,
+          "p99_us": 1.7,
+          "p999_us": 1.9,
+          "max_us": 1.9
+        },
+        "T3_to_T4_risk_engine_evaluation": {
+          "count": 103,
+          "min_us": 31.6,
+          "mean_us": 179.29,
+          "p50_us": 148.0,
+          "p90_us": 367.9,
+          "p95_us": 411.9,
+          "p99_us": 567.6,
+          "p999_us": 986.4,
+          "max_us": 986.4
+        },
+        "T4_to_T5_risk_to_planner_handoff": {
+          "count": 103,
+          "min_us": 0.1,
+          "mean_us": 0.38,
+          "p50_us": 0.3,
+          "p90_us": 0.6,
+          "p95_us": 0.9,
+          "p99_us": 1.7,
+          "p999_us": 1.8,
+          "max_us": 1.8
+        },
+        "T5_to_T6_order_planning": {
+          "count": 103,
+          "min_us": 0.2,
+          "mean_us": 1.49,
+          "p50_us": 1.3,
+          "p90_us": 2.7,
+          "p95_us": 3.2,
+          "p99_us": 3.8,
+          "p999_us": 5.1,
+          "max_us": 5.1
+        },
+        "T7_to_T8_broker_ack": {
+          "count": 103,
+          "min_us": 0.1,
+          "mean_us": 0.3,
+          "p50_us": 0.2,
+          "p90_us": 0.5,
+          "p95_us": 0.5,
+          "p99_us": 1.7,
+          "p999_us": 2.3,
+          "max_us": 2.3
+        },
+        "T8_to_T9_fill_delivery": {
+          "count": 0,
+          "min_us": 0.0,
+          "mean_us": 0.0,
+          "p50_us": 0.0,
+          "p90_us": 0.0,
+          "p95_us": 0.0,
+          "p99_us": 0.0,
+          "p999_us": 0.0,
+          "max_us": 0.0
+        },
+        "T9_to_T10_position_accounting": {
+          "count": 0,
+          "min_us": 0.0,
+          "mean_us": 0.0,
+          "p50_us": 0.0,
+          "p90_us": 0.0,
+          "p95_us": 0.0,
+          "p99_us": 0.0,
+          "p999_us": 0.0,
+          "max_us": 0.0
+        }
+      }
+    }
+  },
+  "Workload 2: Moderate Tick Rate": {
+    "workload_name": "Workload 2: Moderate Tick Rate",
+    "symbols": [
+      "RELIANCE"
+    ],
+    "symbol_count": 1,
+    "strategies_per_symbol": 1,
+    "total_ticks": 500,
+    "orders_executed": 525,
+    "total_wall_duration_ms": 21090.3,
+    "throughput_ticks_per_sec": 23.7,
+    "avg_tick_processing_us": 42180.6,
+    "primary_metric_t1_t7": {
+      "count": 525,
+      "min_us": 482.6,
+      "mean_us": 52036.03,
+      "p50_us": 49931.3,
+      "p90_us": 50878.5,
+      "p95_us": 84681.5,
+      "p99_us": 150268.6,
+      "p999_us": 299984.5,
+      "max_us": 299984.5
+    },
+    "full_lineage_t1_t10": {
+      "count": 0,
+      "min_us": 0.0,
+      "mean_us": 0.0,
+      "p50_us": 0.0,
+      "p90_us": 0.0,
+      "p95_us": 0.0,
+      "p99_us": 0.0,
+      "p999_us": 0.0,
+      "max_us": 0.0
+    },
+    "stages": {
+      "T1_to_T2_tick_to_signal": {
+        "count": 525,
+        "min_us": 132.2,
+        "mean_us": 4830.6,
+        "p50_us": 684.3,
+        "p90_us": 1676.8,
+        "p95_us": 40093.3,
+        "p99_us": 100499.8,
+        "p999_us": 250176.6,
+        "max_us": 250176.6
+      },
+      "T2_to_T4_signal_to_risk": {
+        "count": 525,
+        "min_us": 31.1,
+        "mean_us": 215.0,
+        "p50_us": 182.5,
+        "p90_us": 348.6,
+        "p95_us": 467.8,
+        "p99_us": 836.4,
+        "p999_us": 1726.8,
+        "max_us": 1726.8
+      },
+      "T4_to_T6_risk_to_plan": {
+        "count": 525,
+        "min_us": 0.3,
+        "mean_us": 2.46,
+        "p50_us": 2.1,
+        "p90_us": 3.3,
+        "p95_us": 4.0,
+        "p99_us": 6.5,
+        "p999_us": 82.2,
+        "max_us": 82.2
+      },
+      "T6_to_T7_plan_to_dispatch": {
+        "count": 525,
+        "min_us": 313.0,
+        "mean_us": 46987.97,
+        "p50_us": 49059.0,
+        "p90_us": 49770.9,
+        "p95_us": 50215.2,
+        "p99_us": 53142.2,
+        "p999_us": 83993.1,
+        "max_us": 83993.1
+      },
+      "sub_stages": {
+        "T2_to_T3_signal_to_risk_handoff": {
+          "count": 525,
+          "min_us": 0.1,
+          "mean_us": 0.7,
+          "p50_us": 0.6,
+          "p90_us": 1.2,
+          "p95_us": 1.4,
+          "p99_us": 2.0,
+          "p999_us": 3.1,
+          "max_us": 3.1
+        },
+        "T3_to_T4_risk_engine_evaluation": {
+          "count": 525,
+          "min_us": 31.0,
+          "mean_us": 214.3,
+          "p50_us": 182.0,
+          "p90_us": 347.9,
+          "p95_us": 467.2,
+          "p99_us": 835.1,
+          "p999_us": 1726.2,
+          "max_us": 1726.2
+        },
+        "T4_to_T5_risk_to_planner_handoff": {
+          "count": 525,
+          "min_us": 0.1,
+          "mean_us": 0.47,
+          "p50_us": 0.4,
+          "p90_us": 0.8,
+          "p95_us": 1.0,
+          "p99_us": 1.2,
+          "p999_us": 31.1,
+          "max_us": 31.1
+        },
+        "T5_to_T6_order_planning": {
+          "count": 525,
+          "min_us": 0.2,
+          "mean_us": 1.98,
+          "p50_us": 1.7,
+          "p90_us": 2.7,
+          "p95_us": 3.1,
+          "p99_us": 5.9,
+          "p999_us": 81.8,
+          "max_us": 81.8
+        },
+        "T7_to_T8_broker_ack": {
+          "count": 525,
+          "min_us": 0.1,
+          "mean_us": 0.39,
+          "p50_us": 0.3,
+          "p90_us": 0.5,
+          "p95_us": 0.6,
+          "p99_us": 1.4,
+          "p999_us": 28.6,
+          "max_us": 28.6
+        },
+        "T8_to_T9_fill_delivery": {
+          "count": 0,
+          "min_us": 0.0,
+          "mean_us": 0.0,
+          "p50_us": 0.0,
+          "p90_us": 0.0,
+          "p95_us": 0.0,
+          "p99_us": 0.0,
+          "p999_us": 0.0,
+          "max_us": 0.0
+        },
+        "T9_to_T10_position_accounting": {
+          "count": 0,
+          "min_us": 0.0,
+          "mean_us": 0.0,
+          "p50_us": 0.0,
+          "p90_us": 0.0,
+          "p95_us": 0.0,
+          "p99_us": 0.0,
+          "p999_us": 0.0,
+          "max_us": 0.0
+        }
+      }
+    }
+  },
+  "Workload 3: High Tick Burst": {
+    "workload_name": "Workload 3: High Tick Burst",
+    "symbols": [
+      "RELIANCE"
+    ],
+    "symbol_count": 1,
+    "strategies_per_symbol": 1,
+    "total_ticks": 2500,
+    "orders_executed": 2634,
+    "total_wall_duration_ms": 126397.95,
+    "throughput_ticks_per_sec": 19.8,
+    "avg_tick_processing_us": 50559.18,
+    "primary_metric_t1_t7": {
+      "count": 2634,
+      "min_us": 1567.2,
+      "mean_us": 53571.47,
+      "p50_us": 49970.4,
+      "p90_us": 51036.8,
+      "p95_us": 97626.7,
+      "p99_us": 150072.5,
+      "p999_us": 299325.1,
+      "max_us": 345431.9
+    },
+    "full_lineage_t1_t10": {
+      "count": 0,
+      "min_us": 0.0,
+      "mean_us": 0.0,
+      "p50_us": 0.0,
+      "p90_us": 0.0,
+      "p95_us": 0.0,
+      "p99_us": 0.0,
+      "p999_us": 0.0,
+      "max_us": 0.0
+    },
+    "stages": {
+      "T1_to_T2_tick_to_signal": {
+        "count": 2634,
+        "min_us": 294.6,
+        "mean_us": 5065.63,
+        "p50_us": 879.7,
+        "p90_us": 2108.0,
+        "p95_us": 48424.7,
+        "p99_us": 100088.2,
+        "p999_us": 250064.7,
+        "max_us": 299474.8
+      },
+      "T2_to_T4_signal_to_risk": {
+        "count": 2634,
+        "min_us": 79.1,
+        "mean_us": 280.46,
+        "p50_us": 238.0,
+        "p90_us": 435.3,
+        "p95_us": 595.3,
+        "p99_us": 1001.9,
+        "p999_us": 2568.9,
+        "max_us": 3054.3
+      },
+      "T4_to_T6_risk_to_plan": {
+        "count": 2634,
+        "min_us": 0.7,
+        "mean_us": 3.52,
+        "p50_us": 2.7,
+        "p90_us": 4.1,
+        "p95_us": 4.6,
+        "p99_us": 7.7,
+        "p999_us": 193.8,
+        "max_us": 590.7
+      },
+      "T6_to_T7_plan_to_dispatch": {
+        "count": 2634,
+        "min_us": 1028.1,
+        "mean_us": 48221.87,
+        "p50_us": 48787.5,
+        "p90_us": 49643.7,
+        "p95_us": 49945.6,
+        "p99_us": 51419.7,
+        "p999_us": 71816.0,
+        "max_us": 90077.7
+      },
+      "sub_stages": {
+        "T2_to_T3_signal_to_risk_handoff": {
+          "count": 2634,
+          "min_us": 0.2,
+          "mean_us": 1.19,
+          "p50_us": 0.9,
+          "p90_us": 1.5,
+          "p95_us": 1.7,
+          "p99_us": 2.3,
+          "p999_us": 108.1,
+          "max_us": 187.3
+        },
+        "T3_to_T4_risk_engine_evaluation": {
+          "count": 2634,
+          "min_us": 78.7,
+          "mean_us": 279.27,
+          "p50_us": 237.2,
+          "p90_us": 433.7,
+          "p95_us": 594.1,
+          "p99_us": 1000.5,
+          "p999_us": 2568.0,
+          "max_us": 3053.4
+        },
+        "T4_to_T5_risk_to_planner_handoff": {
+          "count": 2634,
+          "min_us": 0.1,
+          "mean_us": 0.66,
+          "p50_us": 0.5,
+          "p90_us": 1.0,
+          "p95_us": 1.2,
+          "p99_us": 1.7,
+          "p999_us": 29.5,
+          "max_us": 188.4
+        },
+        "T5_to_T6_order_planning": {
+          "count": 2634,
+          "min_us": 0.5,
+          "mean_us": 2.87,
+          "p50_us": 2.2,
+          "p90_us": 3.2,
+          "p95_us": 3.6,
+          "p99_us": 5.9,
+          "p999_us": 84.0,
+          "max_us": 589.6
+        },
+        "T7_to_T8_broker_ack": {
+          "count": 2634,
+          "min_us": 0.1,
+          "mean_us": 0.56,
+          "p50_us": 0.4,
+          "p90_us": 0.7,
+          "p95_us": 0.8,
+          "p99_us": 1.6,
+          "p999_us": 4.5,
+          "max_us": 239.2
+        },
+        "T8_to_T9_fill_delivery": {
+          "count": 0,
+          "min_us": 0.0,
+          "mean_us": 0.0,
+          "p50_us": 0.0,
+          "p90_us": 0.0,
+          "p95_us": 0.0,
+          "p99_us": 0.0,
+          "p999_us": 0.0,
+          "max_us": 0.0
+        },
+        "T9_to_T10_position_accounting": {
+          "count": 0,
+          "min_us": 0.0,
+          "mean_us": 0.0,
+          "p50_us": 0.0,
+          "p90_us": 0.0,
+          "p95_us": 0.0,
+          "p99_us": 0.0,
+          "p999_us": 0.0,
+          "max_us": 0.0
+        }
+      }
+    }
+  },
+  "Workload 4: Multi-Symbol Workload (5 Symbols)": {
+    "workload_name": "Workload 4: Multi-Symbol Workload (5 Symbols)",
+    "symbols": [
+      "RELIANCE",
+      "TCS",
+      "INFY",
+      "HDFCBANK",
+      "ICICIBANK"
+    ],
+    "symbol_count": 5,
+    "strategies_per_symbol": 1,
+    "total_ticks": 1000,
+    "orders_executed": 410,
+    "total_wall_duration_ms": 18617.81,
+    "throughput_ticks_per_sec": 53.7,
+    "avg_tick_processing_us": 18617.81,
+    "primary_metric_t1_t7": {
+      "count": 410,
+      "min_us": 1772.0,
+      "mean_us": 58870.91,
+      "p50_us": 49478.6,
+      "p90_us": 99957.7,
+      "p95_us": 144238.4,
+      "p99_us": 191271.6,
+      "p999_us": 291177.6,
+      "max_us": 291177.6
+    },
+    "full_lineage_t1_t10": {
+      "count": 0,
+      "min_us": 0.0,
+      "mean_us": 0.0,
+      "p50_us": 0.0,
+      "p90_us": 0.0,
+      "p95_us": 0.0,
+      "p99_us": 0.0,
+      "p999_us": 0.0,
+      "max_us": 0.0
+    },
+    "stages": {
+      "T1_to_T2_tick_to_signal": {
+        "count": 410,
+        "min_us": 211.7,
+        "mean_us": 13904.99,
+        "p50_us": 818.4,
+        "p90_us": 50215.6,
+        "p95_us": 94333.0,
+        "p99_us": 141530.2,
+        "p999_us": 241212.9,
+        "max_us": 241212.9
+      },
+      "T2_to_T4_signal_to_risk": {
+        "count": 410,
+        "min_us": 67.9,
+        "mean_us": 255.7,
+        "p50_us": 189.4,
+        "p90_us": 420.1,
+        "p95_us": 571.1,
+        "p99_us": 1224.6,
+        "p999_us": 4085.1,
+        "max_us": 4085.1
+      },
+      "T4_to_T6_risk_to_plan": {
+        "count": 410,
+        "min_us": 1.0,
+        "mean_us": 2.91,
+        "p50_us": 2.3,
+        "p90_us": 3.9,
+        "p95_us": 4.6,
+        "p99_us": 7.8,
+        "p999_us": 73.3,
+        "max_us": 73.3
+      },
+      "T6_to_T7_plan_to_dispatch": {
+        "count": 410,
+        "min_us": 1073.0,
+        "mean_us": 44707.3,
+        "p50_us": 48065.2,
+        "p90_us": 49727.6,
+        "p95_us": 49986.2,
+        "p99_us": 51323.3,
+        "p999_us": 57222.1,
+        "max_us": 57222.1
+      },
+      "sub_stages": {
+        "T2_to_T3_signal_to_risk_handoff": {
+          "count": 410,
+          "min_us": 0.2,
+          "mean_us": 0.78,
+          "p50_us": 0.7,
+          "p90_us": 1.3,
+          "p95_us": 1.6,
+          "p99_us": 2.0,
+          "p999_us": 3.1,
+          "max_us": 3.1
+        },
+        "T3_to_T4_risk_engine_evaluation": {
+          "count": 410,
+          "min_us": 67.7,
+          "mean_us": 254.92,
+          "p50_us": 188.3,
+          "p90_us": 418.8,
+          "p95_us": 569.8,
+          "p99_us": 1224.0,
+          "p999_us": 4083.6,
+          "max_us": 4083.6
+        },
+        "T4_to_T5_risk_to_planner_handoff": {
+          "count": 410,
+          "min_us": 0.1,
+          "mean_us": 0.47,
+          "p50_us": 0.4,
+          "p90_us": 0.9,
+          "p95_us": 1.1,
+          "p99_us": 1.6,
+          "p999_us": 2.4,
+          "max_us": 2.4
+        },
+        "T5_to_T6_order_planning": {
+          "count": 410,
+          "min_us": 0.9,
+          "mean_us": 2.44,
+          "p50_us": 1.9,
+          "p90_us": 3.1,
+          "p95_us": 3.6,
+          "p99_us": 6.0,
+          "p999_us": 73.1,
+          "max_us": 73.1
+        },
+        "T7_to_T8_broker_ack": {
+          "count": 410,
+          "min_us": 0.1,
+          "mean_us": 0.4,
+          "p50_us": 0.4,
+          "p90_us": 0.6,
+          "p95_us": 0.7,
+          "p99_us": 1.2,
+          "p999_us": 1.8,
+          "max_us": 1.8
+        },
+        "T8_to_T9_fill_delivery": {
+          "count": 0,
+          "min_us": 0.0,
+          "mean_us": 0.0,
+          "p50_us": 0.0,
+          "p90_us": 0.0,
+          "p95_us": 0.0,
+          "p99_us": 0.0,
+          "p999_us": 0.0,
+          "max_us": 0.0
+        },
+        "T9_to_T10_position_accounting": {
+          "count": 0,
+          "min_us": 0.0,
+          "mean_us": 0.0,
+          "p50_us": 0.0,
+          "p90_us": 0.0,
+          "p95_us": 0.0,
+          "p99_us": 0.0,
+          "p999_us": 0.0,
+          "max_us": 0.0
+        }
+      }
+    }
+  },
+  "Workload 5: Multi-Strategy Workload (3 Strats)": {
+    "workload_name": "Workload 5: Multi-Strategy Workload (3 Strats)",
+    "symbols": [
+      "RELIANCE"
+    ],
+    "symbol_count": 1,
+    "strategies_per_symbol": 3,
+    "total_ticks": 500,
+    "orders_executed": 1575,
+    "total_wall_duration_ms": 63285.77,
+    "throughput_ticks_per_sec": 7.9,
+    "avg_tick_processing_us": 126571.55,
+    "primary_metric_t1_t7": {
+      "count": 1575,
+      "min_us": 1560.7,
+      "mean_us": 110498.55,
+      "p50_us": 99825.3,
+      "p90_us": 150265.1,
+      "p95_us": 153678.4,
+      "p99_us": 449869.0,
+      "p999_us": 849877.9,
+      "max_us": 899799.2
+    },
+    "full_lineage_t1_t10": {
+      "count": 0,
+      "min_us": 0.0,
+      "mean_us": 0.0,
+      "p50_us": 0.0,
+      "p90_us": 0.0,
+      "p95_us": 0.0,
+      "p99_us": 0.0,
+      "p999_us": 0.0,
+      "max_us": 0.0
+    },
+    "stages": {
+      "T1_to_T2_tick_to_signal": {
+        "count": 1575,
+        "min_us": 285.4,
+        "mean_us": 61814.91,
+        "p50_us": 50284.0,
+        "p90_us": 100866.3,
+        "p95_us": 132468.8,
+        "p99_us": 399931.2,
+        "p999_us": 800722.7,
+        "max_us": 850143.3
+      },
+      "T2_to_T4_signal_to_risk": {
+        "count": 1575,
+        "min_us": 50.9,
+        "mean_us": 183.96,
+        "p50_us": 156.5,
+        "p90_us": 291.8,
+        "p95_us": 372.3,
+        "p99_us": 642.5,
+        "p999_us": 1182.3,
+        "max_us": 1603.3
+      },
+      "T4_to_T6_risk_to_plan": {
+        "count": 1575,
+        "min_us": 0.6,
+        "mean_us": 2.43,
+        "p50_us": 2.0,
+        "p90_us": 3.3,
+        "p95_us": 3.8,
+        "p99_us": 6.1,
+        "p999_us": 50.2,
+        "max_us": 155.3
+      },
+      "T6_to_T7_plan_to_dispatch": {
+        "count": 1575,
+        "min_us": 634.2,
+        "mean_us": 48497.25,
+        "p50_us": 49217.7,
+        "p90_us": 49971.3,
+        "p95_us": 50283.8,
+        "p99_us": 51472.1,
+        "p999_us": 66171.7,
+        "max_us": 80521.7
+      },
+      "sub_stages": {
+        "T2_to_T3_signal_to_risk_handoff": {
+          "count": 1575,
+          "min_us": 0.1,
+          "mean_us": 0.64,
+          "p50_us": 0.5,
+          "p90_us": 1.1,
+          "p95_us": 1.4,
+          "p99_us": 1.9,
+          "p999_us": 5.9,
+          "max_us": 6.2
+        },
+        "T3_to_T4_risk_engine_evaluation": {
+          "count": 1575,
+          "min_us": 50.7,
+          "mean_us": 183.32,
+          "p50_us": 156.0,
+          "p90_us": 291.2,
+          "p95_us": 371.6,
+          "p99_us": 641.0,
+          "p999_us": 1181.8,
+          "max_us": 1602.8
+        },
+        "T4_to_T5_risk_to_planner_handoff": {
+          "count": 1575,
+          "min_us": 0.1,
+          "mean_us": 0.43,
+          "p50_us": 0.4,
+          "p90_us": 0.7,
+          "p95_us": 0.9,
+          "p99_us": 1.3,
+          "p999_us": 5.7,
+          "max_us": 31.8
+        },
+        "T5_to_T6_order_planning": {
+          "count": 1575,
+          "min_us": 0.4,
+          "mean_us": 2.0,
+          "p50_us": 1.6,
+          "p90_us": 2.7,
+          "p95_us": 3.1,
+          "p99_us": 4.9,
+          "p999_us": 49.8,
+          "max_us": 154.6
+        },
+        "T7_to_T8_broker_ack": {
+          "count": 1575,
+          "min_us": 0.1,
+          "mean_us": 0.64,
+          "p50_us": 0.3,
+          "p90_us": 0.6,
+          "p95_us": 0.7,
+          "p99_us": 1.3,
+          "p999_us": 135.3,
+          "max_us": 248.4
+        },
+        "T8_to_T9_fill_delivery": {
+          "count": 0,
+          "min_us": 0.0,
+          "mean_us": 0.0,
+          "p50_us": 0.0,
+          "p90_us": 0.0,
+          "p95_us": 0.0,
+          "p99_us": 0.0,
+          "p999_us": 0.0,
+          "max_us": 0.0
+        },
+        "T9_to_T10_position_accounting": {
+          "count": 0,
+          "min_us": 0.0,
+          "mean_us": 0.0,
+          "p50_us": 0.0,
+          "p90_us": 0.0,
+          "p95_us": 0.0,
+          "p99_us": 0.0,
+          "p999_us": 0.0,
+          "max_us": 0.0
+        }
+      }
+    }
+  }
+}
